@@ -76,6 +76,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="hideDll.cpp" />
+    <ClCompile Include="lin_common.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lin_common.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
