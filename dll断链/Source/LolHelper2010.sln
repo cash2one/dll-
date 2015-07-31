@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LolHelper2010", "LolHelper2010\LolHelper2010.vcxproj", "{ECC9DB82-9587-497D-8981-ADB1A6FFD527}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LolHelper", "LolHelper\LolHelper.vcxproj", "{DBCFDD02-8AF2-404F-B753-A8BEE12C90F1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AirLib", "AirLib_Match\AirLib_Match.vcxproj", "{9FA02738-07FE-425C-A80A-7BD92F0589AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECC9DB82-9587-497D-8981-ADB1A6FFD527}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ECC9DB82-9587-497D-8981-ADB1A6FFD527}.Debug|Win32.Build.0 = Debug|Win32
+		{ECC9DB82-9587-497D-8981-ADB1A6FFD527}.Release|Win32.ActiveCfg = Release|Win32
+		{ECC9DB82-9587-497D-8981-ADB1A6FFD527}.Release|Win32.Build.0 = Release|Win32
+		{DBCFDD02-8AF2-404F-B753-A8BEE12C90F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DBCFDD02-8AF2-404F-B753-A8BEE12C90F1}.Debug|Win32.Build.0 = Debug|Win32
+		{DBCFDD02-8AF2-404F-B753-A8BEE12C90F1}.Release|Win32.ActiveCfg = Release|Win32
+		{DBCFDD02-8AF2-404F-B753-A8BEE12C90F1}.Release|Win32.Build.0 = Release|Win32
+		{9FA02738-07FE-425C-A80A-7BD92F0589AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9FA02738-07FE-425C-A80A-7BD92F0589AF}.Debug|Win32.Build.0 = Debug|Win32
+		{9FA02738-07FE-425C-A80A-7BD92F0589AF}.Release|Win32.ActiveCfg = Release|Win32
+		{9FA02738-07FE-425C-A80A-7BD92F0589AF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+104A1495  |> \5F            pop edi
+104A1496  |.  8BC6          mov eax,esi
+104A1498  |.  5E            pop esi
+104A1499  |.  5B            pop ebx
+104A149A  |.  5D            pop ebp
+104A149B  \.  C3            retn
+104A149C   $  56            push esi                                 ;  hook
+104A149D   .  8BF1          mov esi,ecx
+104A149F   .  8B46 14       mov eax,dword ptr ds:[esi+0x14]
+104A14A2   .  D1E8          shr eax,1
+104A14A4   .  57            push edi
+104A14A5   .  83E0 03       and eax,0x3
+104A14A8   .  33FF          xor edi,edi
+104A14AA   .  2BC7          sub eax,edi
+104A14AC   .  C706 888CF910 mov dword ptr ds:[esi],Adobe_AI.10F98C88
+104A14B2   .  74 0E         je short Adobe_AI.104A14C2
+104A14B4   .  48            dec eax
+104A14B5   .  48            dec eax
+104A14B6   .  75 21         jnz short Adobe_AI.104A14D9
+104A14B8   .  8D4E 0C       lea ecx,dword ptr ds:[esi+0xC]
+104A14BB   .  E8 EA300C00   call Adobe_AI.105645AA
+104A14C0   .  EB 17         jmp short Adobe_AI.104A14D9
+104A14C2   >  8B46 08       mov eax,dword ptr ds:[esi+0x8]
+104A14C5   .  8BC8          mov ecx,eax
+104A14C7   .  897E 08       mov dword ptr ds:[esi+0x8],edi
+104A14CA   .  81E1 00F0FFFF and ecx,0xFFFFF000
+
+Æ«ÒÆ4A149C

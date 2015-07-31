@@ -1,0 +1,5 @@
+#ifndef LOL_HELPER_DLLMAIN
+#define LOL_HELPER_DLLMAIN
+
+
+#endif

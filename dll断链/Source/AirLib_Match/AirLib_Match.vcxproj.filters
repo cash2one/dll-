@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lin">
+      <UniqueIdentifier>{7611d9a6-ef5c-481b-b39a-72836d185f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\Adobe Air Dll Check">
+      <UniqueIdentifier>{ca74c2d5-8382-4e7e-be75-d1eb3c8abc6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\Hook">
+      <UniqueIdentifier>{65dd8d68-55ca-4117-98d6-8601675e9b8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\ParseData">
+      <UniqueIdentifier>{8ce5ad80-4e92-495f-a802-0305b0ee1e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\Log">
+      <UniqueIdentifier>{30271811-6de4-4fb9-8f0c-8d05e73fb050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\Init">
+      <UniqueIdentifier>{7c8fae2d-4283-4bdb-8473-ff9d5cdb883c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\ShareMem">
+      <UniqueIdentifier>{7b824710-e669-45c1-a8da-c59f2d15a6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\Semaphore">
+      <UniqueIdentifier>{a14fa65a-d939-493d-824b-8c065a3a1c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Lol">
+      <UniqueIdentifier>{3f47f890-a6c2-48e8-8f1b-97d3578cfc6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\LoLLocalLog">
+      <UniqueIdentifier>{8fb8e084-a527-44cc-accb-dd722b571cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\RunOneInstance">
+      <UniqueIdentifier>{f41ae2c8-b830-4fd7-b511-ca9beebe826a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LolHelper_dllmain.cpp">
+      <Filter>lin</Filter>
+    </ClCompile>
+    <ClCompile Include="LolHelper_Adobe_Air_dll_Check.cpp">
+      <Filter>lin\Adobe Air Dll Check</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook.cpp">
+      <Filter>lin\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseLoLData.cpp">
+      <Filter>lin\ParseData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LLog.cpp">
+      <Filter>lin\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="LolHelperInit.cpp">
+      <Filter>lin\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="LShareMem.cpp">
+      <Filter>lin\ShareMem</Filter>
+    </ClCompile>
+    <ClCompile Include="LSemaphore.cpp">
+      <Filter>lin\Semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\CzjlHook.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\CzjlSocket.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LOL\LOLHeroDef.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LOL\ParserGameState.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\zjlcommon.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\crypt.cpp">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\log_file.cpp">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\LoLHelperLocalLog.cpp">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\modp_b64.cpp">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\tea.cpp">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClCompile>
+    <ClCompile Include="AirLibRunOneInstance.cpp">
+      <Filter>lin\RunOneInstance</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LolHelper_Adobe_Air_dll_Check.h">
+      <Filter>lin\Adobe Air Dll Check</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook.h">
+      <Filter>lin\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseLoLData.h">
+      <Filter>lin\ParseData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LLog.h">
+      <Filter>lin\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="LolHelperInit.h">
+      <Filter>lin\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="LShareMem.h">
+      <Filter>lin\ShareMem</Filter>
+    </ClInclude>
+    <ClInclude Include="LSemaphore.h">
+      <Filter>lin\Semaphore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CEnum.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CzjlHook.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CzjlSocket.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LOL\LOLDef.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LOL\LOLHeroDef.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LOL\ParserGameState.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zjlcommon.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\crypt.hpp">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\log_file.h">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\LoLHelperLocalLog.h">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\modp_b64.h">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\modp_b64_data.h">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\tea.h">
+      <Filter>lin\LoLLocalLog</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AirLibRunOneInstance.h">
+      <Filter>lin\RunOneInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\injectDll.h">
+      <Filter>lin\Hook</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="detours.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AirLib.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

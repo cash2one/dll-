@@ -1,0 +1,155 @@
+#ifndef _LOLHERO
+#define _LOLHERO
+#include <string>
+
+
+struct LOLHERO{
+	char szEN[32];
+	char szCN[32];
+	char szCNName[32];
+	unsigned int ID;
+};
+
+
+struct LOLRANK{
+	char szEN[20];
+	char szCN[20];
+};
+
+std::string GetHeroNameByID( unsigned int ID );//查询英文ID
+std::string GetRankName(std::string szENName );
+unsigned int GetIDByEnName(std::string str);
+
+LOLHERO GetENByIndex(unsigned int Index);
+std::string GetCN1ByEN(std::string strEnName);//返回称号
+std::string GetCN2ByEN(std::string strEnName);//返回名称
+std::string GetENByCN(std::string strEnName);//返回英文名称
+
+
+
+#define HERO_AATROX	1001
+#define HERO_AHRI	1002
+#define HERO_AKALI	1003
+#define HERO_ALISTAR	1004
+#define HERO_AMUMU	1005
+#define HERO_ANIVIA	1006
+#define HERO_ANNIE	1007
+#define HERO_ASHE	1008
+#define HERO_AZIR	1009
+#define HERO_BLITZCRANK	1010
+#define HERO_BRAND	1011
+#define HERO_BRAUM	1012
+#define HERO_CAITLYN	1013
+#define HERO_CASSIOPEIA	1014
+#define HERO_CHOGATH	1015
+#define HERO_CORKI	1016
+#define HERO_DARIUS	1017
+#define HERO_DIANA	1018
+#define HERO_DRAVEN	1019
+#define HERO_DRMUNDO	1020
+#define HERO_ELISE	1021
+#define HERO_EVELYNN	1022
+#define HERO_EZREAL	1023
+#define HERO_FIDDLESTICKS	1024
+#define HERO_FIORA	1025
+#define HERO_FIZZ	1026
+#define HERO_GALIO	1027
+#define HERO_GANGPLANK	1028
+#define HERO_GAREN	1029
+#define HERO_GNAR	1030
+#define HERO_GRAGAS	1031
+#define HERO_GRAVES	1032
+#define HERO_HECARIM	1033
+#define HERO_HEIMERDINGER	1034
+#define HERO_IRELIA	1035
+#define HERO_JANNA	1036
+#define HERO_JARVANIV	1037
+#define HERO_JAX	1038
+#define HERO_JAYCE	1039
+#define HERO_JINX	1040
+#define HERO_KARMA	1041
+#define HERO_KARTHUS	1042
+#define HERO_KASSADIN	1043
+#define HERO_KATARINA	1044
+#define HERO_KAYLE	1045
+#define HERO_KENNEN	1046
+#define HERO_KHAZIX	1047
+#define HERO_KOGMAW	1048
+#define HERO_LEBLANC	1049
+#define HERO_LEESIN	1050
+#define HERO_LEONA	1051
+#define HERO_LISSANDRA	1052
+#define HERO_LUCIAN	1053
+#define HERO_LULU	1054
+#define HERO_LUX	1055
+#define HERO_MALPHITE	1056
+#define HERO_MALZAHAR	1057
+#define HERO_MAOKAI	1058
+#define HERO_MASTERYI	1059
+#define HERO_MISSFORTUNE	1060
+#define HERO_MONKEYKING	1061
+#define HERO_MORDEKAISER	1062
+#define HERO_MORGANA	1063
+#define HERO_NAMI	1064
+#define HERO_NASUS	1065
+#define HERO_NAUTILUS	1066
+#define HERO_NIDALEE	1067
+#define HERO_NOCTURNE	1068
+#define HERO_NUNU	1069
+#define HERO_OLAF	1070
+#define HERO_ORIANNA	1071
+#define HERO_PANTHEON	1072
+#define HERO_POPPY	1073
+#define HERO_QUINN	1074
+#define HERO_RAMMUS	1075
+#define HERO_RENEKTON	1076
+#define HERO_RENGAR	1077
+#define HERO_RIVEN	1078
+#define HERO_RUMBLE	1079
+#define HERO_RYZE	1080
+#define HERO_SEJUANI	1081
+#define HERO_SHACO	1082
+#define HERO_SHEN	1083
+#define HERO_SHYVANA	1084
+#define HERO_SINGED	1085
+#define HERO_SION	1086
+#define HERO_SIVIR	1087
+#define HERO_SKARNER	1088
+#define HERO_SONA	1089
+#define HERO_SORAKA	1090
+#define HERO_SWAIN	1091
+#define HERO_SYNDRA	1092
+#define HERO_TALON	1093
+#define HERO_TARIC	1094
+#define HERO_TEEMO	1095
+#define HERO_THRESH	1096
+#define HERO_TRISTANA	1097
+#define HERO_TRUNDLE	1098
+#define HERO_TRYNDAMERE	1099
+#define HERO_TWISTEDFATE	1100
+#define HERO_TWITCH	1101
+#define HERO_UDYR	1102
+#define HERO_URGOT	1103
+#define HERO_VARUS	1104
+#define HERO_VAYNE	1105
+#define HERO_VEIGAR	1106
+#define HERO_VELKOZ	1107
+#define HERO_VIKTOR	1108
+#define HERO_VI	1109
+#define HERO_VLADIMIR	1110
+#define HERO_VOLIBEAR	1111
+#define HERO_WARWICK	1112
+#define HERO_XERATH	1113
+#define HERO_XINZHAO	1114
+#define HERO_YASUO	1115
+#define HERO_YORICK	1116
+#define HERO_ZAC	1117
+#define HERO_ZED	1118
+#define HERO_ZIGGS	1119
+#define HERO_ZILEAN	1120
+#define HERO_ZYRA	1121
+#define HERO_KALISTA	1122
+#define HERO_REKSAI 1123
+#define HERO_BARD 1124
+#define HERO_EKKO 1125
+#endif

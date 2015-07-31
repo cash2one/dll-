@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lin">
+      <UniqueIdentifier>{bb40fbed-8129-4304-9599-1970b921272f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\HttpPost">
+      <UniqueIdentifier>{1a0330ad-803f-46b7-ba90-db23e864c2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\Semaphore">
+      <UniqueIdentifier>{0b400a2d-c157-4c6f-b74b-8c26b9475626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\ShareMem">
+      <UniqueIdentifier>{f5a9592c-e751-4126-89aa-d4908ad326e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Lol">
+      <UniqueIdentifier>{a135305b-c38f-4537-b56f-2207d6a645b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\ReportData">
+      <UniqueIdentifier>{a4e1eb1c-ea33-410c-8ed8-c011f94a0295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\json">
+      <UniqueIdentifier>{3fb79804-5f3f-4d3d-9b7b-f573512a39fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\RemoteThreadInject">
+      <UniqueIdentifier>{96d3db97-32c5-4896-abbd-91f6bc6e8d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\common">
+      <UniqueIdentifier>{e07f2a68-cbdf-42a5-9f63-1db75c3fbde9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\LocalLogFile">
+      <UniqueIdentifier>{5cc371e3-347a-4e0b-bcb3-8aa4f36d80d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lin\AirLibRunOneInstance">
+      <UniqueIdentifier>{97e80830-4c00-4f74-87f5-69e813eb1a8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpPost.h">
+      <Filter>lin\HttpPost</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AirLib_Match\LShareMem.h">
+      <Filter>lin\ShareMem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AirLib_Match\LSemaphore.h">
+      <Filter>lin\Semaphore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\CEnum.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LOL\LOLDef.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LOL\LOLHeroDef.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LOL\ParserGameState.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\LLog.h">
+      <Filter>头文件\Lol</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportData.h">
+      <Filter>lin\ReportData</Filter>
+    </ClInclude>
+    <ClInclude Include="json_tool.h">
+      <Filter>lin\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\RemoteThreadInject.h">
+      <Filter>lin\RemoteThreadInject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zjlcommon.h">
+      <Filter>lin\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\crypt.hpp">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\log_file.h">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\modp_b64.h">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\modp_b64_data.h">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\tea.h">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\LoLHelperLocalLog.h">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\logfile\LoLInfo.h">
+      <Filter>lin\ReportData</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AirLib_Match\AirLibRunOneInstance.h">
+      <Filter>lin\AirLibRunOneInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\injectDll.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpPost.cpp">
+      <Filter>lin\HttpPost</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AirLib_Match\LShareMem.cpp">
+      <Filter>lin\ShareMem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AirLib_Match\LSemaphore.cpp">
+      <Filter>lin\Semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LOL\LOLHeroDef.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LOL\ParserGameState.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LLog.cpp">
+      <Filter>头文件\Lol</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportData.cpp">
+      <Filter>lin\ReportData</Filter>
+    </ClCompile>
+    <ClCompile Include="json_reader.cpp">
+      <Filter>lin\json</Filter>
+    </ClCompile>
+    <ClCompile Include="json_value.cpp">
+      <Filter>lin\json</Filter>
+    </ClCompile>
+    <ClCompile Include="json_writer.cpp">
+      <Filter>lin\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\RemoteThreadInject.cpp">
+      <Filter>lin\RemoteThreadInject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\zjlcommon.cpp">
+      <Filter>lin\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\crypt.cpp">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\log_file.cpp">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\modp_b64.cpp">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\tea.cpp">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\logfile\LoLHelperLocalLog.cpp">
+      <Filter>lin\LocalLogFile</Filter>
+    </ClCompile>
+    <ClCompile Include="WxClientExport.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AirLib_Match\AirLibRunOneInstance.cpp">
+      <Filter>lin\AirLibRunOneInstance</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json_valueiterator.inl">
+      <Filter>lin\json</Filter>
+    </None>
+    <None Include="Export.def">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LolHelper.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

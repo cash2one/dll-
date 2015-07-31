@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9FA02738-07FE-425C-A80A-7BD92F0589AF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AirLib_Match</RootNamespace>
+    <ProjectName>AirLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(MSBuildStartupDirectory)\common;$(MSBuildStartupDirectory)\include;$(IncludePath);$(SolutionDir)\common;$(SolutionDir)\common\detours\include;$(SolutionDir)\AirLib_Match;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)\common\detours\lib.X86;</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+    <OutDir>$(SolutionDir)\..\Bin\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>AirLib</TargetName>
+    <IncludePath>$(SolutionDir)\common;$(SolutionDir)\include;$(IncludePath);$(SolutionDir)\AirLib_Match;</IncludePath>
+    <EmbedManifest>true</EmbedManifest>
+    <OutDir>$(SolutionDir)\..\Bin\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AIRLIB_MATCH_EXPORTS;%(PreprocessorDefinitions); _CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>
+      </SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(SolutionDir)\..\Bin\pdb\$(ProjectName)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AIRLIB_MATCH_EXPORTS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(SolutionDir)\..\Bin\pdb\$(ProjectName)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\CzjlHook.cpp" />
+    <ClCompile Include="..\common\CzjlSocket.cpp" />
+    <ClCompile Include="..\common\LLog.cpp" />
+    <ClCompile Include="..\common\logfile\crypt.cpp" />
+    <ClCompile Include="..\common\logfile\log_file.cpp" />
+    <ClCompile Include="..\common\logfile\LoLHelperLocalLog.cpp" />
+    <ClCompile Include="..\common\logfile\modp_b64.cpp" />
+    <ClCompile Include="..\common\logfile\tea.cpp" />
+    <ClCompile Include="..\common\LOL\LOLHeroDef.cpp" />
+    <ClCompile Include="..\common\LOL\ParserGameState.cpp" />
+    <ClCompile Include="..\common\zjlcommon.cpp" />
+    <ClCompile Include="Hook.cpp" />
+    <ClCompile Include="LolHelperInit.cpp" />
+    <ClCompile Include="LolHelper_Adobe_Air_dll_Check.cpp" />
+    <ClCompile Include="LolHelper_dllmain.cpp" />
+    <ClCompile Include="LSemaphore.cpp" />
+    <ClCompile Include="LShareMem.cpp" />
+    <ClCompile Include="ParseLoLData.cpp" />
+    <ClCompile Include="AirLibRunOneInstance.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\CEnum.h" />
+    <ClInclude Include="..\common\CzjlHook.h" />
+    <ClInclude Include="..\common\CzjlSocket.h" />
+    <ClInclude Include="..\common\LLog.h" />
+    <ClInclude Include="..\common\logfile\crypt.hpp" />
+    <ClInclude Include="..\common\logfile\log_file.h" />
+    <ClInclude Include="..\common\logfile\LoLHelperLocalLog.h" />
+    <ClInclude Include="..\common\logfile\modp_b64.h" />
+    <ClInclude Include="..\common\logfile\modp_b64_data.h" />
+    <ClInclude Include="..\common\logfile\tea.h" />
+    <ClInclude Include="..\common\LOL\LOLDef.h" />
+    <ClInclude Include="..\common\LOL\LOLHeroDef.h" />
+    <ClInclude Include="..\common\LOL\ParserGameState.h" />
+    <ClInclude Include="..\common\zjlcommon.h" />
+    <ClInclude Include="..\include\injectDll.h" />
+    <ClInclude Include="Hook.h" />
+    <ClInclude Include="LolHelperInit.h" />
+    <ClInclude Include="LolHelper_Adobe_Air_dll_Check.h" />
+    <ClInclude Include="LSemaphore.h" />
+    <ClInclude Include="LShareMem.h" />
+    <ClInclude Include="ParseLoLData.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="resource2.h" />
+    <ClInclude Include="AirLibRunOneInstance.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="detours.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AirLib.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,21 @@
+LIBRARY LolHelper
+EXPORTS
+AdvDLLMsg
+wxdllfuncall
+clientsocketrecSvrIP
+dllendsession
+dllgjunlock
+dllgjlock
+dllgetdata
+dlllockform
+dllunlockform
+dlladvgetdata
+testcall
+setcallbackinfo
+checkfun
+getdllinfo
+dlllockformcreate
+plugin_init
+plugin_uninit
+plugin_event_notify
+get_plugin_name
